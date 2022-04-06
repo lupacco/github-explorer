@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // adiciona funcionalidades ao arquivo ts                                
+    "jsx": "react-jsx", //informa que estamos utilizando jsx -> html dentro do ts/js                
+    "moduleResolution": "node",
+    "resolveJsonModule": true, //add a possibilidade de importarmos arquivos json                  
+    "allowJs": true, // fala q vamos poder ter arquivos tanto js qto ts na nossa aplicação                              
+    "noEmit": true, //pra caso a gente execute o build da nossa aplicação ele nao emite o codigo da aplicação                         
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, //modo de lidar com erros dentro do js                                
+    "skipLibCheck": true
+  },
+  "include": [
+    "src"
+  ] //especifica onde o código da nossa aplicação vai estar, informa o ts que todo o código da aplicação ta dentro exclusivamente da pasta src, se tivessemos outra pasta com codigo da nossa aplicação(codigo ts) teriamos que informar aqui tbm
+}
